@@ -38,22 +38,25 @@ st.markdown("""
 # ============================================
 st.markdown("""
 <style>
+    /* Tipografías de marca: Fraunces (titulares) + Work Sans (cuerpo) */
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
     .stApp {
-        background-color: #F8F9FA;
+        background-color: #F6F1E7;
     }
     
     .download-title {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Fraunces', serif;
         font-size: 2.2rem;
         font-weight: 700;
-        color: #1A3C4A;
+        color: #3B2247;
         text-align: center;
     }
     
     .download-subtitle {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 1.1rem;
-        color: #4A5568;
+        color: #241B2E;
         text-align: center;
         max-width: 600px;
         margin: 0 auto;
@@ -64,21 +67,21 @@ st.markdown("""
         background-color: #FFFFFF;
         padding: 2.5rem 2.5rem 2rem 2.5rem;
         border-radius: 16px;
-        box-shadow: 0 4px 24px rgba(26, 60, 74, 0.08);
+        box-shadow: 0 4px 24px rgba(59, 34, 71, 0.1);
         max-width: 500px;
         margin: 1.5rem auto;
-        border: 1px solid #E2E8F0;
+        border: 1px solid rgba(59, 34, 71, 0.15);
     }
     
     .form-box label {
         font-weight: 600;
-        color: #1A3C4A;
-        font-family: 'Open Sans', sans-serif;
+        color: #3B2247;
+        font-family: 'Work Sans', sans-serif;
     }
     
     .success-box {
-        background-color: #F0F7F0;
-        border: 2px solid #B87333;
+        background-color: #FFFFFF;
+        border: 2px solid #C9A227;
         border-radius: 12px;
         padding: 2rem;
         text-align: center;
@@ -88,26 +91,26 @@ st.markdown("""
     
     .success-box .icon-big {
         font-size: 2.8rem;
-        color: #B87333;
+        color: #B8562F;
         display: block;
         margin-bottom: 0.5rem;
     }
     
     .success-box h3 {
-        font-family: 'Montserrat', sans-serif;
-        color: #1A3C4A;
+        font-family: 'Fraunces', serif;
+        color: #3B2247;
         margin: 0.5rem 0;
     }
     
     .success-box p {
-        font-family: 'Open Sans', sans-serif;
-        color: #4A5568;
+        font-family: 'Work Sans', sans-serif;
+        color: #241B2E;
         line-height: 1.6;
     }
     
     .guia-item {
         background-color: #FFFFFF;
-        border: 1px solid #E2E8F0;
+        border: 1px solid rgba(59, 34, 71, 0.15);
         border-radius: 12px;
         padding: 1.2rem 1.5rem;
         max-width: 500px;
@@ -116,15 +119,15 @@ st.markdown("""
     }
     
     .guia-item h4 {
-        font-family: 'Montserrat', sans-serif;
-        color: #1A3C4A;
+        font-family: 'Fraunces', serif;
+        color: #3B2247;
         margin: 0 0 0.3rem 0;
         font-size: 1.05rem;
     }
     
     .guia-item p {
-        font-family: 'Open Sans', sans-serif;
-        color: #4A5568;
+        font-family: 'Work Sans', sans-serif;
+        color: #241B2E;
         font-size: 0.92rem;
         margin: 0 0 0.8rem 0;
         line-height: 1.5;
@@ -132,16 +135,16 @@ st.markdown("""
     
     .footer {
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        color: #A0AEC0;
+        font-family: 'Work Sans', sans-serif;
+        color: #7A6E63;
         font-size: 0.8rem;
         padding: 2rem 0;
-        border-top: 1px solid #E2E8F0;
+        border-top: 1px solid rgba(59, 34, 71, 0.15);
         margin-top: 2.5rem;
     }
     
     .footer a {
-        color: #B87333;
+        color: #B8562F;
         text-decoration: none;
         font-weight: 500;
     }
@@ -156,9 +159,9 @@ st.markdown("""
     }
     
     .back-link a {
-        color: #B87333;
+        color: #B8562F;
         text-decoration: none;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-weight: 500;
     }
     
@@ -168,21 +171,21 @@ st.markdown("""
     
     .disclaimer {
         text-align: center;
-        color: #A0AEC0;
-        font-family: 'Open Sans', sans-serif;
+        color: #7A6E63;
+        font-family: 'Work Sans', sans-serif;
         font-size: 0.8rem;
         margin-top: -0.5rem;
     }
     
     .stCheckbox label {
-        font-family: 'Open Sans', sans-serif;
-        color: #4A5568;
+        font-family: 'Work Sans', sans-serif;
+        color: #241B2E;
         font-size: 0.9rem;
     }
     
     .stAlert {
         border-radius: 8px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -319,7 +322,7 @@ else:
 st.markdown("""
 <div class="footer">
     <p>
-        <strong>Ángela Gutiérrez</strong> · Economista, Universidad de Los Andes (2003) · Especialista en Metodología Aplicada a Ciencias Sociales<br>
+        <strong>Angela Gutiérrez</strong> · Economista, Universidad de Los Andes (2003) · Asesora metodológica para investigación en Educación<br>
         <a href="https://wa.me/584247474381" target="_blank">+58 424 747 4381</a>
     </p>
 </div>
